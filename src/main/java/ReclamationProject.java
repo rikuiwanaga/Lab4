@@ -22,13 +22,12 @@ public class ReclamationProject {
         for (int i = 0; i < alpha.length(); i++) {
             for (int j = alpha.length() - i; j > 0; j--) {
                 for (int k = 0; k < beta.length()- j; k++) {
-                    r = (alpha.regionMatches(i, beta, k, j) && j >r.length()) ? alpha.substring(i,i + j) : r; // Do it!
+                    r = (alpha.regionMatches(i, beta, k, j) && j >r.length()) ? alpha.substring(i,i + j) : r;
                     }
 
                 }
 
         }
-
         return r;
     }
 
